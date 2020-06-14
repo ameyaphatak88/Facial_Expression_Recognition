@@ -1,5 +1,5 @@
 import camera
 
-camera.video_capt()
+print(str(camera.video_capt('sample1.mkv')))
 
 

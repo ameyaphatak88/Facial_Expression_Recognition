@@ -7,7 +7,7 @@ def video_capt(filepath):
 	video1 = cv2.VideoCapture(filepath)
 
 	length = int(video1.get(cv2.CAP_PROP_FRAME_COUNT))
-	print(length)
+	return(length)
 
 if __name__ == '__main__':
 	assert len(sys.argv) == 2, "Number of arguments not equal to 2"
