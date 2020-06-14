@@ -3,7 +3,7 @@ import os
 import sys
 
 def video_capt(filepath):
-	assert os.path.exists(filepath), "video file path is not valid"
+	assert os.path.exists(filepath), "video file path is not valid" + filepath
 	video1 = cv2.VideoCapture(filepath)
 
 	length = int(video1.get(cv2.CAP_PROP_FRAME_COUNT))
